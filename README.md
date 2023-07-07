@@ -74,7 +74,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 
 ```shell
 curl -X POST -H "Content-Type: application/json" -d '{
-  "notification_id": 1,
+  "notification_id": 2,
   "client_id": 1
 }' http://localhost:3000/notification_clients
 ```
