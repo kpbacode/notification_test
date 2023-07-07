@@ -15,6 +15,9 @@ class NotificationsController < ApplicationController
     @notification = Notification.new(notification_params)
 
     if @notification.save
+      #
+      MockPushService.send(title: "My title", description: "My description", token: "some_unique_device_token")
+
       render json: @notification, status: :created
     else
       render json: @notification.errors, status: :unprocessable_entity
