@@ -32,7 +32,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 ```shell
 curl -X PUT -H "Content-Type: application/json" -d '{
   "seen": true
-}' http://localhost:3000/notification_clients/1
+}' http://localhost:3000/notification_clients/7
 ```
 
 ```sql
