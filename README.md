@@ -80,4 +80,7 @@ curl -X GET -H "Content-Type: application/json" \
 http://localhost:3000/clients
 ```
 
-
+### List Notifications
+```shell
+curl -X GET -H "Content-Type: application/json"  http://localhost:3000/notifications
+```
