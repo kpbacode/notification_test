@@ -35,6 +35,14 @@ curl -X PUT -H "Content-Type: application/json" -d '{
 }' http://localhost:3000/notification_clients/1
 ```
 
+```sql
+ id | notification_id | client_id | seen |         created_at         |         updated_at
+----+-----------------+-----------+------+----------------------------+----------------------------
+  8 |               1 |         1 | f    | 2023-07-07 13:44:27.44707  | 2023-07-07 13:44:27.44707
+  9 |               1 |         1 | f    | 2023-07-07 14:28:09.236219 | 2023-07-07 14:28:09.236219
+  7 |               2 |         1 | t    | 2023-07-07 13:44:11.772385 | 2023-07-07 14:29:40.345231
+```
+
 ### Assign a notification to a client
 ```shell
 curl -X POST -H "Content-Type: application/json" -d '{
