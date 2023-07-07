@@ -30,7 +30,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 
 ### Mark a notification as seen
 ```shell
-curl -X POST -H "Content-Type: application/json" -d '{
+curl -X PUT -H "Content-Type: application/json" -d '{
   "seen": true
 }' http://localhost:3000/notification_clients/1
 ```
