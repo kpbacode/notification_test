@@ -28,7 +28,7 @@ rails db:setup
 rails db:migrate
 ```
 
-```markdown
+
 ### Create a notification
 ```shell
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -84,5 +84,5 @@ curl -X POST -H "Content-Type: application/json" -d '{
 curl -X GET -H "Content-Type: application/json" \
 http://localhost:3000/clients
 ```
-```
+
 
