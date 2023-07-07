@@ -1,0 +1,32 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "seen": true
+}' http://localhost:3000/notification_clients/1
+
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "notification_id": 1,
+  "client_id": 1
+}' http://localhost:3000/notification_clients
+
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "client": {
+    "name": "John Doe"
+  }
+}' http://localhost:3000/clients
+
+
+# multiple id assigmend to client
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "notification_id": 1,
+  "client_id": 1
+}' http://localhost:3000/notification_clients
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "notification_id": 1,
+  "client_id": 1
+}' http://localhost:3000/notification_clients
