@@ -23,7 +23,10 @@ Things you may want to cover:
 
 * ...
 
-
+```shell
+rails db:setup
+rails db:migrate
+```
 
 ```markdown
 ### Create a notification
